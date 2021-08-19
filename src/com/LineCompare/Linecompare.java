@@ -26,7 +26,7 @@ public class Linecompare {
 	    
 	    int x3=(x2-x1);
 	    int y3=(y2-y1);
-	    double lengthOfaLine1=Math.sqrt((Math.pow(x3, 2))+(Math.pow(y3, 2)));
+	    Double lengthOfaLine1=Math.sqrt((Math.pow(x3, 2))+(Math.pow(y3, 2)));
 	    System.out.println("length of Line 1 :" +lengthOfaLine1);
 	    
 	    System.out.println("Enter the value of x4");
@@ -47,12 +47,16 @@ public class Linecompare {
 	    
 	    int x6=(x5-x4);
 	    int y6=(y5-y4);
-	    double lengthOfaLine2=Math.sqrt((Math.pow(x6, 2))+(Math.pow(y6, 2)));
+	    Double lengthOfaLine2=Math.sqrt((Math.pow(x6, 2))+(Math.pow(y6, 2)));
 	    System.out.println("length of Line 2 :" +lengthOfaLine2);
 	    
-	    if(lengthOfaLine1 == lengthOfaLine2) {
+	 /*   if(lengthOfaLine1 == lengthOfaLine2) {
 	    	System.out.println("Length of two lines are Equal");
-	    }
+	    } */
+	
+	    int op= lengthOfaLine1.compareTo(lengthOfaLine2);
+	    if(op==0)
+	    System.out.println("Twon lines are equal");
 		
 	}
 

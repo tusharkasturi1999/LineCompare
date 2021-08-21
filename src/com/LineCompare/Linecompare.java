@@ -84,6 +84,7 @@ public class Linecompare {
 	    //Creating object 
 	    Linecompare obj = new Linecompare(x1,y2,x2,y2,x4,y4,x5,y5);
 	    //Calling method through object
+	    
 	    obj.Comparing();
 	}
 

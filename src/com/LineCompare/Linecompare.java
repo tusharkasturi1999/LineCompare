@@ -3,8 +3,10 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class Linecompare {
+	//Variables to store coordinates of each line
 	public int x1,x2,x4,x5,y1,y2,y4,y5;
 	
+	//Constructor called
 	Linecompare(int x1,int y1,int x2,int y2,int x4, int y4, int x5, int y5){
 		this.x1 =x1;
 		this.x2 =x2;
@@ -15,6 +17,8 @@ public class Linecompare {
 		this.y4 =y4;
 		this.y5 =y5;
 	}
+	
+	//This is the method to compare coordiates
 	public void Comparing(){
 		int x3=(x2-x1);
 		int y3=(y2-y1);
@@ -39,6 +43,8 @@ public class Linecompare {
 	public static void main( String[] args ) {
 		System.out.println("Welcome to Line Comparision");
 		
+		
+		//Input coordinates from the user
 		Scanner sc = new Scanner(System.in);
 		
 	    System.out.println("Enter the value of x1");
@@ -75,7 +81,10 @@ public class Linecompare {
 	    
 	    sc.close();
 		
+	    //Creating object 
 	    Linecompare obj = new Linecompare(x1,y2,x2,y2,x4,y4,x5,y5);
+	    //Calling method through object
+	    
 	    obj.Comparing();
 	}
 
